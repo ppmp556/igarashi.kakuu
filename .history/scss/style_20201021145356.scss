@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+$cColor: #572B23;
+$cBgColor: #f6f3eb;
+$cGreen: #315611;
+$cwhite: #ffffff;
+$cGray: #f9f9f9;
+
+
+html {
+    font-size: 62.5%;
+    overflow: auto;
+
+
+}
+
+body {
+    color: $cColor;
+    background-color: $cwhite;
+    font-family: "Bad Script","Sawarabi Gothic";
+    font-size: 62.5%;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+    /*テキストデフォルト下線外し*/
+    text-decoration: none;
+    /* color: #ffffff; */
+}
+
+
+
+
+.container {
+    overflow: hidden;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.inner {
+    max-width: 336px;
+    width: 100%;
+}
+
+
+.site_btn {
+    display: flex;
+    width: 200px;
+    font-size: 2.4rem;
+    color: #572B23;
+    line-height: 27px;
+}
+
+.site_link {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+/****************
+
+header
+
+*************/
+
+.header {
+    display: flex;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: $cwhite;
+    opacity: .8;
+
+    &_ttl {
+        font-size: 2.0rem;
+    font-family: "Bad Script";
+    opacity: 1;
+    color: $cColor;
+    }
+}
+
+// nav
+
+.nav {
+    width: 100%;
+    line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+/* ハンバーガーメニュー */
+.navList {
+    position: absolute;
+    display: block;
+    top: 54px;
+    /* left: 377px; */
+    left: 1000px;
+    overflow: hidden;
+    width: 15rem;
+    max-height: auto;
+    cursor: pointer;
+
+    overflow-y: auto;/*縦方向の表示*/
+
+    display: flex;
+    flex-direction: column;
+    transition: opacity .8s ease, visibility .6s ease;
+    color: #572B23;
+
+    background-color: #F6F3FB;
+    visibility: .6s ease;
+    opacity: 1;
+}
+.clicked .navList {
+    left: 114px;
+    visibility: visible;
+    opacity: 0.9;
+    width: 262px;
+    top: 0;
+    /* height: 667px; */
+    height: 100vh;
+    background-color: #f6f3f8;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clicked .navList .navItem {
+    transform: translateX(0px);
+}
+
+.navItem {
+    padding: 2px 0;
+    font-size: 2rem;
+    color: #572B23;
+
+    transition: transform 6s ease, opacity .2s ease;
+}
+
+.navList li {
+    transform: translateX(200px);
+
+    transition: transform .6s ease, opacity .2s ease;
+}
+
+.navList li:nth-child(2) {
+    transition-delay: .15s;
+
+}
+.navList li:nth-child(3) {
+    transition-delay: .3s;
+
+
+}
+.navList li:nth-child(4) {
+    transition-delay: .45s;
+
+}
+.navList .navItem:nth-child(5) {
+    transition-delay: .6s;
+
+}
+
+.navItem a {
+    display: block;
+    width: 100%;
+}
+
+.toggleBtn {
+  
+    z-index: 2000;
+    position: absolute;
+    top: 0;
+    width: 45.25px;
+    /* height: 24px; */
+    height: 55px;
+    right: 16.19px;
+    cursor: pointer;
+    transition: all .30s ease-in-out;/*0.3秒かけて変化*/
+}
+
+.toggleLine {
+    display: block;
+    position: absolute;
+    z-index: 2100;
+    right: 6.3px;
+    top: 14px;
+    width: 100%;
+    height: 1px;
+    background-color: #315611;
+}
+
+.tg1 {
+    top: 16.19px;
+}
+.tg2 {
+    top: 28.19px;
+}
+.tg3 {
+    top: 40.19px;
+}
+
+
+
+.toggleLine {
+    transition: all 0.3s;
+}
+
+/* togglerにclickedクラス付与されたら*/
+
+.clicked .tg1 {
+    transform: translateY(12px) rotate(-315deg);/*時計回りに45度回転*/
+}
+.clicked .tg2 {
+    opacity: 0;
+}
+.clicked .tg3 {
+    transform: translateY(-11px) rotate(315deg);/*反時計周りに45度回転*/
+}
+
+.navItem a {
+    color: #572B23;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+.navItem span {
+    font-size: 1.4rem;
+}
+
+/****** nav下線 ******/
+.navItem a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #572B23;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.navItem a:hover::after {
+    transform: scale(1, 1);
+}
+
+.btnWrap {
+    width: 20rem;
+    height: 5.6rem;
+}

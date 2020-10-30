@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+$cColor: #572B23;
+$cBgColor: #f6f3eb;
+$cGreen: #315611;
+$cwhite: #ffffff;
+$cGray: #f9f9f9;
+
+
+html {
+    font-size: 62.5%;
+    overflow: auto;
+
+
+}
+
+body {
+    color: #572B23;
+    background-color: #ffffff;
+    font-family: "Bad Script","Sawarabi Gothic";
+    font-size: 62.5%;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+    /*テキストデフォルト下線外し*/
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+
+.container {
+    overflow: hidden;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.inner {
+    max-width: 336px;
+    width: 100%;
+}
+
+
+/****************
+
+header
+
+*************/ 
+
+.header {
+    display: flex;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+
+    &_ttl {
+        font-size: 2.0rem;
+    font-family: "Bad Script";
+    opacity: 1;
+    color: $cColor;
+    }
+}
+

@@ -1,0 +1,585 @@
+/* 接頭に u- をつける */
+
+.u-headerTxt a {
+    font-size: 2.0rem;
+    font-family: "Bad Script";
+    opacity: 1;
+    color: #572B23;
+
+    
+}
+
+
+.u-mainKv-txt {
+    font-size: 1.8rem;
+    color: #325811;
+    padding: 10px 24px;
+    background-color: #ffffff;
+    opacity: 0.8;
+    margin-bottom: 16px;
+}
+.u-mainKv-txt2 {
+    font-size: 1.6rem;
+    /* color: #325811; */
+    padding: 13px 24px;
+    background-color: #ffffff;
+    opacity: 0.8;
+    letter-spacing: 0.32px;
+    width: 228px;
+    height: 48px;
+}
+
+.u-contact-btn {
+    font-size: 2.3rem;
+    font-family: "Bad Script";
+    overflow: hidden;
+    color: #572B23;
+
+
+}
+
+
+.u-contentTxt {
+    font-size: 3.2rem;
+    font-family: "Sawarabi Gothic";
+}
+.u-contentBg {
+    font-size: 10rem;
+    color: #F6F3EB;
+    z-index: -100;
+    position: absolute;
+    left: 0;
+}
+
+.u-boxImg {
+    right: -143px;
+    top: -424px;
+    z-index: -101;
+}
+.u-boxImg2 {
+    top: -57px;
+    z-index: -1;
+}
+.u-boxImg3 {
+    top: 0px;
+}
+.u-boxImg4 {
+    top: 408px;
+    left: 279px;
+}
+.u-boxImg5 {
+    top: -4px;
+    left: 279px;
+}
+.u-boxImg6 {
+    top: 61px;
+    left: 0;
+}
+.u-boxImg7 {
+    top: -2px;
+    left: 0;
+}
+.u-boxImg8 {
+    top: -97px;
+    left: 278px;
+}
+.u-boxImg9 {
+    top: -97px;
+    left: 279px;
+}
+.u-boxImg10 {
+    top: -188px;
+    left: 0px;
+}
+.u-wpColor {
+    background-color: #f9f9f9;
+    z-index: -100;
+}
+.u-cnColor {
+    background-color: #f9f9f9;
+}
+
+.u-prof {
+    font-size: 1.6rem;
+    letter-spacing: 0.32px;
+    line-height: 2;
+    font-family: "Sawarabi Gothic";
+}
+.u-Btn {
+    font-family:"Bad Script";
+    font-size: 2.4rem;
+
+}
+.u-work {
+    position: relative;
+    left: -28px;
+}
+
+.u-workTxt {
+    font-size: 2.4rem;
+    text-align: left;
+}
+.u-workTxt3 {
+    font-size: 2.4rem;
+    text-align: left;
+    top: 373px;
+    /* left: 19px; */
+}
+.u-workTop {
+    position: relative;
+    top: 82px;
+    width: 335px;
+    height: 70px;
+}
+.u-workTop2 {
+    position: relative;
+    top: 121px;
+    width: 335px;
+    height: 70px;
+    /* display: block; */
+}
+
+
+
+.u-workContxt {
+    font-size: 1.6rem;
+    text-align: left;
+    letter-spacing: 0.32px;
+    font-family: "Sawarabi Gothic";
+}
+.u-workContxt3 {
+    font-size: 1.6rem;
+    text-align: left;
+    letter-spacing: 0.32px;
+    font-family: "Sawarabi Gothic";
+    top: 375px;
+}
+.u-workBtn {
+    border: none;
+    color: #315611;
+    background-color: #ffffff;
+    font-size: 1.4rem;
+}
+.u-workBtn2 {
+    border: none;
+    color: #315611;
+    background-color: #ffffff;
+    font-size: 1.4rem;
+    position: relative;
+    top: 0px;
+}
+.u-works2 {
+    position: absolute;
+    top: 225px;
+}
+.u-workBtn3 {
+    border: none;
+    color: #315611;
+    background-color: #ffffff;
+    font-size: 1.4rem;
+    position: relative;
+    top: 0px;
+}
+.u-works3 {
+    position: absolute;
+    top: 438px;
+  }
+
+.u-skillBgtitle {
+    left: 25px;
+    margin: auto;
+    /* top: -70px; */
+}
+.u-skillTitle {
+    top: 80px;
+}
+
+.u-skillconTxt {
+    font-size: 1.6rem;
+    font-family: "Sawarabi Gothic";
+    letter-spacing: 0.32px;
+    line-height: 2;
+   
+}
+.u-list {
+    font-size: 1.6rem;
+    font-family: "Sawarabi Gothic";
+    letter-spacing: 0.32px;
+    line-height: 2;
+}
+
+.u-contactBg {
+    left: 49px;
+    top: -2px;
+    margin: auto;
+}
+.u-contactTxt {
+    position: relative;
+    margin: auto;
+    top: -17px;
+}
+
+.u-formTxt {
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+.u-send {
+        font-size: 24px;
+        text-align: center;
+        background-color: #ffffff;
+        border: 1px solid #315611;
+        font-family: "Bad Script";
+        position: relative;
+        top: 259px;
+        left: 50px;
+
+}
+
+.u-icon {
+    font-size: 3rem;
+    margin: 8px;
+}
+.u-icon:hover {
+    transform: translateY(-3px);
+}
+
+
+.u-copy {
+    margin: 12px;
+    font-size: 1.4rem;
+    align-items: center;
+    position: relative;
+    top: 6px;
+}
+.u-name {
+    font-size: 1.8rem;
+    letter-spacing: 0.36px;
+}
+
+/* .u-contact-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #315611;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .7s cubic-bezier(.19, 1, .22, 1);
+}
+.u-contact-btn:hover {
+    color: #fff;
+    
+
+
+}
+.u-contact-btn:hover:before{
+    left: 0;
+
+    transform: scaleX(1);
+    transform-origin: left;
+} */
+
+@media screen and (min-width: 768px) {
+
+
+
+    .u-headerTxt a {
+        font-size: 3.2rem;
+
+    }
+    .u-mainKv-txt {
+        font-size: 4.0rem;
+        padding: 10px 47px;
+        margin-bottom: 40px;
+        opacity: 1;
+　　}
+    .u-mainKv-txt2 {
+            font-size: 2.4rem;
+            padding: 13px 40px;
+            background-color: #ffffff;
+            opacity: 1;
+            letter-spacing: 0;
+            width: 344px;
+            height: 60px;
+    }
+    .u-boxImg {
+        left: 6px;
+    }
+    .u-boxImg2 {
+        position: absolute;
+        top: 662px;
+        left: 0;
+        z-index: -1;
+    }
+
+    .u-boxImg4 {
+        top: 1695px;
+        left: 76px;
+    }
+    .u-boxImg5 {
+        top: 0;
+        left: 673px;
+    }
+    .u-boxImg6 {
+        top: 129px;
+        left: 0;
+    }
+    .u-boxImg7 {
+        top: -2px;
+        left: 0;
+    }
+    .u-boxImg8 {
+        top: -127px;
+        left: 672px;
+    }
+    .u-boxImg9 {
+        top: -96px;
+        left: 672px;
+    }
+    .u-boxImg10 {
+        top: -134px;
+        left: 0px;
+        z-index: 1;
+    }
+    .u-contentBg {
+        font-size: 12rem;
+        color: #F6F3EB;
+        z-index: -100;
+        position: absolute;
+        left: auto;
+    }
+    .u-contentTxt {
+        font-size: 3.6rem;
+    }
+    .u-prof {
+        font-size: 1.6rem;
+        letter-spacing: 0.32px;
+        font-family: "Sawarabi Gothic";
+        line-height: 2;
+    }
+    .u-Btn {
+        margin: 0;
+    }
+    .u-work {
+        position: relative;
+        left: -212px;
+        opacity: 1;
+        color: #F6F3EB;
+    }
+    .u-workTxt {
+        font-size: 3.2rem;
+        text-align: left;
+        display: flex;
+        left: -75px;
+        padding: 0;
+    }
+    .u-workTxt3 {
+        font-size: 3.2rem;
+        top: 222px;
+        left: -75px;
+    }
+    .u-workBtn2 {
+        position: absolute;
+        top: 523px;
+        left: 115px;
+    }
+    .u-works2 {
+        position: absolute;
+        top: 225px;
+    }
+    .u-workBtn3 {
+        top: 236px;
+    }
+    .u-workTop {
+        top: 82px;
+        width: 500px;
+        height: auto;
+        line-height: 1.5;
+    }
+    .u-workTop2 {
+        position: relative;
+        top: 100px;
+        width: 500px;
+        height: auto;
+        /* display: block; */
+    }
+
+    .u-workContxt {
+        line-height: 1.5;
+        font-size: 1.6rem;
+        text-align: left;
+        letter-spacing: 0.32px;
+        font-family: "Sawarabi Gothic";
+    }
+    .u-workContxt3 {
+        font-size: 1.6rem;
+        letter-spacing: 1.5;
+        top: 219px;
+    }
+    .u-skillTitle {
+        top: 120px;
+        left: 0;
+    }
+    .u-skillconTxt {
+        line-height: 2;
+    }
+    .u-list {
+        font-size: 1.8rem;
+        letter-spacing: 0.36px;
+    }
+    .u-contactBg {
+        left: 0;
+        top: -2px;
+        margin: auto;
+        z-index: 0;
+    }
+    .u-skillBgtitle {
+        right: auto;
+        padding-left: 41px;
+    }
+    .u-contactTxt {
+        left: 0;
+        top: 23px;
+    }
+
+ }
+
+@media screen and (min-width: 960px) {
+
+        .u-mainKv-txt {
+        margin-bottom: 34px;
+        padding-left: 120px;
+        padding-right: 56px;
+        text-align: center;
+        letter-spacing: 0;
+    }
+    .u-mainKv-txt2 {
+        text-align: center;
+        width: 533px;
+        height: 60px;
+        padding-left: 120px;
+        padding-right: 144px;
+    }
+    .u-contentTxt {
+        font-size: 3.6rem;
+        top: 120px;
+        left: 723px;
+        width: auto;
+        }
+        .u-Btn {
+        margin: 0;
+
+        }
+
+        .u-prof {
+            font-size: 1.8rem;
+            letter-spacing: 0.36px;
+            font-family: "Sawarabi Gothic";
+            line-height: 2;
+        }
+        .u-work {
+            left: -508px;
+        }
+        .u-work2 {
+            left: 611px;
+        }
+        .u-workBtn {
+            color: #315611;
+            background-color: #ffffff99;
+            border: initial;
+        }
+
+        .u-workBtn3 {
+        top: 0;
+        position: absolute;
+        }
+        .u-workTop {
+        top: 14px;
+        padding-bottom: 16px;
+        }
+        .u-workTop2 {
+        position: relative;
+        top: 13px;
+        width: 500px;
+        height: auto;
+        /* display: block; */
+        }
+        .u-workBtn2 {
+        position: absolute;
+        top: 244px;
+        left: 409px;
+        color: #315611;
+        background-color: #ffffff99;
+        }
+        .u-workTxt {
+            left: 19px;
+        }
+        .u-workTxt3 {
+            top: 75px;
+            left: 20px;
+            line-height: 1.5;
+        }
+        .u-workContxt3 {
+            letter-spacing: 0.32;
+            top: 89px;
+        }
+
+        .u-boxImg2 {
+            top: 620px;
+        }
+
+        .u-boxImg4 {
+            top: 987px;
+            left: 321px;
+        }
+        .u-boxImg5 {
+            top: 0;
+            left: 1270px;
+        }
+        .u-boxImg6 {
+            top: 129px;
+            left: 0;
+        }
+        .u-boxImg7 {
+            top: -2px;
+            left: 0;
+        }
+        .u-boxImg8 {
+            top: -97px;
+            left: 1270px;
+        }
+        .u-boxImg9 {
+            top: -97px;
+            left: 1270px;
+        }
+        .u-boxImg10 {
+            top: -134px;
+            left: 0px;
+            z-index: 1;
+        }
+
+        .u-skillTitle {
+            top: 120px;
+            left: 162px;
+        }
+        .u-contentTxt {
+            font-size: 3.6rem;
+            line-height: 1.5;
+        }
+        .u-contactTxt {
+            left: 0;
+            top: 0;
+        }
+        .u-send {
+            font-size: 24px;
+            position: absolute;
+            top: 400.5px;
+            left: 227px;
+        }
+
+
+}

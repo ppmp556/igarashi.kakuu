@@ -1,0 +1,413 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  overflow: auto;
+
+
+}
+
+body {
+  color: #572B23;
+  background-color: #ffffff;
+  font-family: "Bad Script","Sawarabi Gothic";
+  font-size: 62.5%;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  /*テキストデフォルト下線外し*/
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+/* lyout 接頭にly-をつける */
+
+.ly-wrapper {
+  overflow: hidden;
+}
+
+
+.ly-headerWrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 667px;
+  overflow: hidden;
+  width: 375px;
+
+}
+
+
+.ly-header {
+  position: relative;
+  display: flex;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+}
+
+.ly-nav {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.ly-navBox {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+
+}
+
+.ly-mainKv {
+  position: absolute;
+  top: 284px;
+}
+.ly-mainKvbox {
+  position: relative;
+  top: -10px;
+}
+
+.ly-contactBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 124px;
+  left: 88px;
+
+  width: 20rem;
+  height: 5.6rem;
+}
+
+.ly-profWrapper {
+  position: absolute;
+  top: 668px;
+  width: 375px;
+  height: 1054px;
+}
+.ly-profBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 942px;
+}
+
+
+.ly-worksWrapper {
+  position: absolute;
+  top: 1721px;
+  width: 375px;
+  height: 1838px;
+}
+.ly-worksContainer {
+  display: flex;
+  flex-direction: column;
+
+}
+.ly-worksBox {
+  position: relative;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+.ly-resworksInbox {
+  position: relative;
+  width: 375px;
+}
+
+
+
+.ly-skillWrapper{
+  position: absolute;
+  top: 3559px;
+  width: 375px;
+  height: 793px;
+}
+.ly-contactWrapper{
+  position: absolute;
+  top: 4352px;
+  width: 375px;
+  height: 847px;
+  z-index: -100;
+}
+.ly-formWrapper {
+  position: relative;
+  /* left: 13px; */
+  left: 0;
+}
+
+
+
+
+.ly-form {
+  position: relative;
+  top: 79.36px;
+  left: 20px;
+  width: 90%;
+}
+
+.ly-form textarea{
+  width: 30rem;
+  height: 16rem;
+}
+
+.ly-shareInner {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 24px;
+  display: flex;
+  left: 129px;
+}
+
+.footer {
+  width: 375px;
+}
+
+.ly-footer {
+  top: 5199px;
+  height: 138px;
+  position: absolute;
+}
+
+/* *************************ipad版************************ */
+
+@media screen and (min-width: 768px) {
+
+  .ly-headerWrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 1023px;
+    width: 100%;
+  
+  }
+
+  .ly-header {
+    position: relative;
+    display: flex;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+  }
+
+
+.ly-nav {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+  }
+  .ly-navBox {
+    height: 80px;
+
+  }
+
+  .ly-mainKv {
+    position: absolute;
+    top: 462px;
+    width: 100%;
+  }
+  .ly-contactBtn {
+    top: 185px;
+    left: 284px;
+  }
+  .ly-profWrapper {
+    top: 1023px;
+    width: 768px;
+  }
+
+  .ly-profBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .ly-worksWrapper {
+    position: absolute;
+    top: 1781px;
+    display: flex;
+    height: 1791px;
+    width: 768px;
+    
+
+  }
+  .ly-worksBox {
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 235px;
+  }
+
+  .ly-worksContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 113px;
+  
+  }
+  .ly-skillWrapper{
+    top: 3572px;
+    width: 768px;
+  }
+  .ly-contactWrapper{
+    top: 4398px;
+    width: 768px;
+    height: 903px;
+    
+  }
+  .ly-formWrapper {
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+  .ly-form {
+
+    left: 30px;
+  }
+  .ly-shareInner {
+    top: 40px;
+    left: 325px;
+  }
+
+  .footer {
+      top: 5301px;
+      position: absolute;
+      background-color: #fff;
+      width: 768px;
+      height: 154px;
+  }
+
+  .ly-footer {
+    width: 100%;
+    height: 100%;
+    top: 40px;
+    left: 325px;
+    position: initial;
+  }
+
+}
+
+@media screen and (min-width: 960px) {
+  
+  .ly-headerWrapper {
+       
+    height: 768px;
+    width: 1366px;
+
+  
+  }
+  
+  
+  .ly-header {
+    position: relative;
+    display: flex;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+  }
+  .ly-navBox {
+    height: 80px;
+    width: 1366px;
+  }
+  .ly-mainKvbox {
+    width: 850px;
+    
+    top: -128px;
+  }
+  .ly-contactBtn {
+    top: 14px;
+    left: 583px;
+  }
+  .ly-profWrapper {
+    top: 768px;
+    width: 1366px;
+    height: 716px;
+    
+  }
+  .ly-profBox {
+    height: 0;
+  }
+
+  .ly-worksWrapper {
+    top: 1483px;
+    display: flex;
+    height: 1083px;
+    width: 1366px;
+    
+
+  }
+  .ly-worksBox {
+    position: relative;
+    justify-content: center;
+    flex-direction: initial;
+    align-items: center;
+    top: 235px;
+    display: flex;
+  }
+  .ly-worksContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 113px;
+  
+  }
+  .ly-skillWrapper{
+    top: 2566px;
+    width: 1366px;
+    height: 520px;
+  }
+  .ly-form {
+    top: 191px;
+    left: 48px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  .ly-formWrapper {
+    position: relative;
+    left: 0;
+  }
+  .ly-contactWrapper{
+    top: 3087px;
+    width: 1366px;
+    height: 939px;
+  }
+  .footer {
+    top: 4026px;
+    position: absolute;
+    background-color: #fff;
+    width: 1366px;
+    height: 154px;
+    }
+
+    .ly-footer {
+      width: 100%;
+      height: 100%;
+      top: 40px;
+      left: 325px;
+      position: initial;
+    }
+    .ly-shareInner {
+      top: 40px;
+      left: 624px;
+    }
+
+}
