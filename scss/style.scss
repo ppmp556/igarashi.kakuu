@@ -332,6 +332,12 @@ kv
 
     }
 
+    @include tab {
+    &_txtbox {
+        width: 100%;
+    }
+}
+
     &_txt {
         margin: auto;
         text-align: center;
@@ -342,6 +348,12 @@ kv
         opacity: 1;
         margin-bottom: 16px;
         line-height: 2;
+    }
+
+    @include tab {
+        &_txt {
+            font-size: 4rem;
+        }
     }
 
 }
@@ -359,6 +371,16 @@ kv
     display: inline-block;
     margin-right: auto;
 }
+@include tab {
+    .__subtxt {
+        font-size: 2.4rem;
+        width: 344px;
+        padding: 19px 40px 17px;
+        line-height: .82;
+        height: 60px;
+    }
+}
+
 
 
 .contact_box {
@@ -379,6 +401,14 @@ kv
     font-family: "bad script";
     color: $cColor;
 
+}
+
+@include tab {
+    .contact_box {
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
 }
 
 
@@ -407,6 +437,8 @@ profile
         margin: 0 auto;
     }
 
+    
+
     @include tab {
         .section_ttlbox {
             padding: 128px 0 39px;
@@ -418,7 +450,7 @@ profile
         width: 336px;
         margin: 0 auto;
 
-        
+
     }
 
     @include tab {
@@ -426,7 +458,6 @@ profile
             width: 704px;
             display: flex;
             flex-direction: row-reverse;
-            
     }
 
         &::after {
@@ -506,7 +537,25 @@ profile
             opacity: 1;
             left: -8px;
             top: -8px;
-            
+        }
+    }
+
+    @include tab {
+        &_imgbox {
+            width: 296px;
+            height: 371px;
+            left: -100%;
+            transform: translateX(100%);
+
+            &::after {
+                width: 296px;
+                height: 371px;
+            }
+
+            &::before {
+                width: 296px;
+                height: 371px;
+            }
         }
     }
 
@@ -519,6 +568,12 @@ profile
     &_txt {
         margin: 40px 0 40px;
         font-size: 1.6rem;
+    }
+
+    @include tab {
+        &_txt {
+            margin: 0 0 100px;
+        }
     }
 
     .section_btnbox {
@@ -534,10 +589,15 @@ profile
         border: 1px solid $cGreen;
         line-height: 48px;
     }
-
-
-
 }
+
+@include tab {
+    .prof {
+        padding: 0 0 80px;
+    }
+}
+
+
 
 
 /****************
@@ -762,15 +822,15 @@ skill
         margin-top: 43px;
     }
 
-     &_imgbox {
+    &_imgbox {
         margin-top: 21px;
         width: 200px;
         height: 200px;
         z-index: 90;
-       
+
     }
 
-    
+
     &_img {
         width: 100%;
         height: 100%;
@@ -782,7 +842,7 @@ skill
         line-height: 2em;
     }
 
-     &_txt {
+    &_txt {
         margin: 16px 0;
         font-size: 1.6rem;
         letter-spacing: .32px;
@@ -905,7 +965,7 @@ footer
 *************/
 
 
- .footer {
+.footer {
 
     // top: 4026px;
     // position: absolute;
@@ -949,15 +1009,16 @@ footer
         text-align: center;
         margin-top: 24px;
     }
+
+    &_icon {
+        font-size: 3rem;
+        margin: 8px;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
 }
 
-
-.footer-icon {
-    font-size: 3rem;
-    margin: 8px;
-}
-.footer-icon:hover {
-    transform: translateY(-3px);
-}
 
 
