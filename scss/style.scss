@@ -122,6 +122,17 @@ header
     }
 }
 
+@include tab {
+    .header {
+        line-height: 80px;
+
+        &_ttl {
+            font-size: 3.2rem;
+            margin-left: 40px;
+        }
+    }
+}
+
 // nav
 
 .nav {
@@ -169,6 +180,21 @@ header
             align-items: center;
             justify-content: center;
 
+        }
+    }
+
+    @include tab {
+        &_list {
+            justify-content: center;
+            flex-direction: initial;
+            left: 38%;
+            top: 0;
+            width: 62%;
+            background-color: $cwhite;
+
+            &.clicked {
+                display: none;
+            }
         }
     }
 
@@ -224,6 +250,18 @@ header
 
     }
 
+    @include tab {
+        &_item {
+            margin-right: 56px;
+            font-size: 2.4rem;
+
+            &:nth-child(4) {
+                margin-right: 40px;
+                display: block;
+            }
+        }
+    }
+
 
 
 
@@ -274,6 +312,12 @@ header
     right: 16.19px;
     cursor: pointer;
     transition: all .30s ease-in-out;/*0.3秒かけて変化*/
+}
+
+@include tab {
+    .toggle_btn {
+        display: none;
+    }
 }
 
 .toggle_line {
@@ -778,8 +822,8 @@ works
     @include tab {
 
         &_txtbox {
-            width: 50%;
-            text-align: center;
+            width: 100%;
+            text-align: left;
         }
         &_txt {
             margin: 16px auto;
@@ -844,6 +888,12 @@ skill
 
     }
 
+    @include tab {
+        &_ttl {
+            font-size: 3.6rem;
+        }
+    }
+
     &_inner {
         position: relative;
         width: 336px;
@@ -873,6 +923,10 @@ skill
         }
     }
 
+    &_inner {
+        width: 500px;
+    }
+
     &_listbox {
         margin-top: 43px;
     }
@@ -883,6 +937,19 @@ skill
         height: 200px;
         z-index: 90;
 
+    }
+
+    @include tab {
+        &_imgbox {
+            margin-top: 0;
+        }
+    }
+
+    @include tab {
+        &_imgbox {
+            width: 320px;
+            height: 320px;
+        }
     }
 
 
@@ -897,11 +964,30 @@ skill
         line-height: 2em;
     }
 
+    @include tab {
+        &_item {
+            font-size: 1.8rem;
+
+        }
+    }
+
     &_txt {
         margin: 16px 0;
         font-size: 1.6rem;
         letter-spacing: .32px;
         line-height: 2em;
+    }
+
+    @include tab {
+        &_txt {
+            margin: 39px 0;
+        }
+    }
+}
+
+@include tab {
+    .skill {
+        padding: 128px 0 80px;
     }
 }
 
