@@ -6,7 +6,7 @@ $cGreen: #315611;
 $cwhite: #ffffff;
 $cGray: #f9f9f9;
 
-$widthPc: 1024px;
+$widthPc: 1366px;
 $widthTab: 764px;
 $widthSp: 480px;
 
@@ -377,8 +377,14 @@ kv
     }
 
     @include tab {
-    &_txtbox {
-        width: 100%;
+        &_txtbox {
+            width: 100%;
+    }
+
+    @include pc {
+        &_txtbox {
+            width: 80%;
+        }
     }
 }
 
@@ -422,6 +428,12 @@ kv
         padding: 19px 40px 17px;
         line-height: .82;
         height: 60px;
+    }
+}
+
+@include pc {
+    .__subtxt {
+        width: 533px;
     }
 }
 
@@ -605,6 +617,25 @@ profile
                 width: 296px;
                 height: 371px;
             }
+        }
+    }
+
+    @include pc {
+        &_imgbox {
+            width: 400px;
+            height: 500px;
+
+            &::after {
+                width: 400px;
+                height: 500px;
+            }
+
+            &::before {
+                width: 400px;
+                height: 500px;
+            }
+
+
         }
     }
 
@@ -824,6 +855,7 @@ works
         &_txtbox {
             width: 100%;
             text-align: left;
+            margin: 0 -10vw;
         }
         &_txt {
             margin: 16px auto;
@@ -1047,6 +1079,13 @@ contact
 
         
     }
+
+    @include tab {
+        &_form {
+            width: 380px;
+
+        }
+    }
 }
 
 
@@ -1075,7 +1114,10 @@ contact
 
 .form_ttl {
     padding-left: 10px;
+
 }
+
+
 
 
 .form_box {
@@ -1121,6 +1163,12 @@ footer
         margin-top: 24px;
     }
 
+    @include tab {
+        &_sharelist {
+            margin-top: 40px;
+        }
+    }
+
     &_inner {
         position: relative;
 
@@ -1154,10 +1202,17 @@ footer
     &_icon {
         font-size: 3rem;
         margin: 8px;
+        border-radius: 50%;
 
         &:hover {
             transform: translateY(-3px);
         }
+    }
+}
+
+@include tab {
+    footer {
+        height: 154px;
     }
 }
 
