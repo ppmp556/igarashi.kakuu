@@ -532,6 +532,17 @@ profile
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .prof_inner {
+    width: 981px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .prof_ttl {
   width: 100%;
   position: relative;
@@ -647,6 +658,14 @@ profile
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .prof_txt {
+    width: 493px;
+    margin: 0 0 40px 40px;
+    font-size: 1.8rem;
+  }
+}
+
 .prof .section_btnbox {
   margin: 0 auto;
   -webkit-box-pack: center;
@@ -662,12 +681,25 @@ profile
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .prof .section_btnbox {
+    width: 100%;
+  }
+}
+
 .prof .site_btn {
   text-align: center;
   width: 160px;
   margin: 0 8px;
   border: 1px solid #315611;
   line-height: 48px;
+}
+
+@media screen and (min-width: 1366px) {
+  .prof .site_btn {
+    width: 200px;
+    line-height: 56px;
+  }
 }
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
@@ -729,8 +761,24 @@ works
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .work_inner {
+    width: 65%;
+    height: auto;
+  }
+}
+
 .work_item {
   margin-bottom: 80px;
+}
+
+@media screen and (min-width: 1366px) {
+  .work_item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .work_ttl {
@@ -766,6 +814,12 @@ works
 @media screen and (min-width: 764px) and (max-width: 1366px) {
   .work_minttl {
     font-size: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .work_minttl {
+    margin-top: 0;
   }
 }
 
@@ -818,6 +872,15 @@ works
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .work_imgbox {
+    left: initial;
+    -webkit-transform: initial;
+            transform: initial;
+    margin-right: 40px;
+  }
+}
+
 .work_img {
   width: 100%;
   height: 100%;
@@ -835,10 +898,16 @@ works
   .work_txtbox {
     width: 100%;
     text-align: left;
-    margin: 0 -10vw;
+    margin: 0 auto;
   }
   .work_txt {
     margin: 16px auto;
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .work_txtbox {
     width: 500px;
   }
 }
@@ -851,6 +920,13 @@ works
   border: 1px solid #315611;
   width: 120px;
   line-height: 40px;
+}
+
+@media screen and (min-width: 1366px) {
+  .work .site_btn {
+    margin: initial;
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
@@ -901,6 +977,13 @@ skill
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .skill_ttl {
+    text-align: left;
+    margin-left: 162px;
+  }
+}
+
 .skill_inner {
   position: relative;
   width: 336px;
@@ -930,8 +1013,16 @@ skill
   z-index: 1;
 }
 
-.skill_inner {
-  width: 500px;
+@media screen and (min-width: 764px) and (max-width: 1366px) {
+  .skill_inner {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .skill_inner {
+    width: 77%;
+  }
 }
 
 .skill_listbox {
@@ -975,6 +1066,13 @@ skill
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .skill_txtbox {
+    width: 500px;
+    margin-right: 80px;
+  }
+}
+
 .skill_txt {
   margin: 16px 0;
   font-size: 1.6rem;
@@ -985,6 +1083,13 @@ skill
 @media screen and (min-width: 764px) and (max-width: 1366px) {
   .skill_txt {
     margin: 39px 0;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .skill_txt {
+    font-size: 1.8rem;
+    letter-spacing: .36px;
   }
 }
 

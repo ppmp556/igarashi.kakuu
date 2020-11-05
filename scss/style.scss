@@ -536,6 +536,14 @@ profile
         }
     }
 
+    @include pc {
+        &_inner {
+            width: 981px;
+            margin: 0 auto;
+            display: flex;
+        }
+    }
+
     &_ttl {
         width: 100%;
         position: relative;
@@ -658,6 +666,14 @@ profile
         }
     }
 
+    @include pc {
+        &_txt {
+            width: 493px;
+            margin: 0 0 40px 40px;
+            font-size: 1.8rem;
+        }
+    }
+
     .section_btnbox {
         // display: block;
         margin: 0 auto;
@@ -672,12 +688,25 @@ profile
         }
     }
 
+    @include pc {
+        .section_btnbox {
+            width: 100%;
+        }
+    }
+
     .site_btn {
         text-align: center;
         width: 160px;
         margin: 0 8px;
         border: 1px solid $cGreen;
         line-height: 48px;
+    }
+
+    @include pc {
+        .site_btn {
+            width: 200px;
+            line-height: 56px;
+        }
     }
 }
 
@@ -743,9 +772,22 @@ works
         }
     }
 
+    @include pc {
+        &_inner {
+            width: 65%;
+            height: auto;
+        }
+    }
+
 
     &_item {
         margin-bottom: 80px;
+    }
+
+    @include pc {
+        &_item {
+            display: flex;
+        }
     }
 
 
@@ -783,6 +825,12 @@ works
     @include tab {
         &_minttl {
             font-size: 3.2rem;
+        }
+    }
+
+    @include pc {
+        &_minttl {
+            margin-top: 0;
         }
     }
 
@@ -837,6 +885,14 @@ works
         }
     }
 
+    @include pc {
+        &_imgbox {
+            left: initial;
+            transform: initial;
+            margin-right: 40px;
+        }
+    }
+
     &_img {
         width: 100%;
         height: 100%;
@@ -855,10 +911,16 @@ works
         &_txtbox {
             width: 100%;
             text-align: left;
-            margin: 0 -10vw;
+            margin: 0 auto;
         }
         &_txt {
             margin: 16px auto;
+            width: 500px;
+        }
+    }
+
+    @include pc {
+        &_txtbox {
             width: 500px;
         }
     }
@@ -871,6 +933,13 @@ works
         border: 1px solid $cGreen;
         width: 120px;
         line-height: 40px;
+    }
+
+    @include pc {
+        .site_btn {
+            margin: initial;
+            margin-left: auto;
+        }
     }
 
 }
@@ -926,6 +995,13 @@ skill
         }
     }
 
+    @include pc {
+        &_ttl {
+            text-align: left;
+            margin-left: 162px;
+        }
+    }
+
     &_inner {
         position: relative;
         width: 336px;
@@ -954,10 +1030,19 @@ skill
             z-index: 1;
         }
     }
+    @include tab {
 
-    &_inner {
-        width: 500px;
+        &_inner {
+            width: 500px;
+        }
     }
+
+    @include pc {
+        &_inner {
+            width: 77%;
+        }
+    }
+
 
     &_listbox {
         margin-top: 43px;
@@ -1003,6 +1088,13 @@ skill
         }
     }
 
+    @include pc {
+        &_txtbox {
+            width: 500px;
+            margin-right: 80px;
+        }
+    }
+
     &_txt {
         margin: 16px 0;
         font-size: 1.6rem;
@@ -1013,6 +1105,13 @@ skill
     @include tab {
         &_txt {
             margin: 39px 0;
+        }
+    }
+
+    @include pc {
+        &_txt {
+            font-size: 1.8rem;
+            letter-spacing: .36px;
         }
     }
 }
