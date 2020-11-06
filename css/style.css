@@ -481,6 +481,7 @@ profile
 *************/
 .prof {
   padding: 0 0 64px;
+  position: relative;
 }
 
 .prof .section_ttlbox {
@@ -488,6 +489,30 @@ profile
   display: block;
   text-align: center;
   margin: 0 auto;
+}
+
+.prof::after {
+  position: absolute;
+  content: '';
+  background: url(/images/スマホデザイン/グループ・475.png) no-repeat;
+  width: 96px;
+  height: 96px;
+  display: block;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.prof::before {
+  position: absolute;
+  content: '';
+  background: url(/images/スマホデザイン/グループ・476.png) no-repeat;
+  width: 96px;
+  height: 96px;
+  display: block;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
@@ -509,26 +534,6 @@ profile
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-  }
-  .prof::after {
-    position: absolute;
-    content: '';
-    background: url(/images/スマホデザイン/グループ・475.png) no-repeat;
-    width: 13%;
-    height: 16%;
-    display: block;
-    left: 0;
-    bottom: -120%;
-    z-index: -1;
-  }
-  .prof::before {
-    position: absolute;
-    content: '';
-    background: url(/images/スマホデザイン/グループ・476.png) no-repeat;
-    width: 13%;
-    height: 16%;
-    display: block;
-    left: 87.5%;
   }
 }
 
@@ -716,6 +721,29 @@ works
 .work {
   padding: 88px 0 64px;
   background-color: #f9f9f9;
+  position: relative;
+}
+
+.work::after {
+  position: absolute;
+  content: '';
+  background: url(/images/スマホデザイン/グループ・487.png) no-repeat;
+  width: 96px;
+  height: 96px;
+  display: block;
+  right: 0;
+  bottom: 0;
+}
+
+.work::before {
+  position: absolute;
+  content: '';
+  background: url(/images/スマホデザイン/グループ・477.png) no-repeat;
+  width: 96px;
+  height: 96px;
+  display: block;
+  bottom: 0;
+  left: 0;
 }
 
 .work .section_ttlbox {
@@ -730,29 +758,6 @@ works
   width: 336px;
   margin: 0 auto;
   height: 1838px;
-}
-
-.work_inner::after {
-  position: absolute;
-  content: '';
-  background: url(/images/スマホデザイン/グループ・487.png) no-repeat;
-  width: 100%;
-  height: 19%;
-  display: block;
-  left: 77%;
-  bottom: -317px;
-}
-
-.work_inner::before {
-  position: absolute;
-  content: '';
-  background: url(/images/スマホデザイン/グループ・477.png) no-repeat;
-  width: 100%;
-  height: 16%;
-  display: block;
-  top: -4.7%;
-  left: -6%;
-  z-index: 1;
 }
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
@@ -943,6 +948,30 @@ skill
 .skill {
   padding: 88px 0 65px;
   background-color: #ffffff;
+  position: relative;
+}
+
+.skill::after {
+  position: absolute;
+  content: '';
+  background: url(/images/スマホデザイン/グループ・492.png) no-repeat;
+  width: 96px;
+  height: 96px;
+  display: block;
+  right: 0;
+  bottom: 0;
+}
+
+.skill::before {
+  position: absolute;
+  content: '';
+  background: url(/images/スマホデザイン/グループ・493.png) no-repeat;
+  width: 96px;
+  height: 96px;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .skill_ttl {
@@ -988,29 +1017,6 @@ skill
   position: relative;
   width: 336px;
   margin: 0 auto;
-}
-
-.skill_inner::after {
-  position: absolute;
-  content: '';
-  background: url(/images/スマホデザイン/グループ・492.png) no-repeat;
-  width: 100%;
-  height: 19%;
-  display: block;
-  left: 77%;
-  top: -131px;
-}
-
-.skill_inner::before {
-  position: absolute;
-  content: '';
-  background: url(/images/スマホデザイン/グループ・493.png) no-repeat;
-  width: 29%;
-  height: 16%;
-  display: block;
-  bottom: -65px;
-  left: -6%;
-  z-index: 1;
 }
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
@@ -1139,6 +1145,25 @@ contact
   width: 300px;
 }
 
+@media screen and (min-width: 1366px) {
+  .contact_inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    width: 88%;
+  }
+  .contact_formwrap {
+    width: 300px;
+  }
+  .contact_formwrap:nth-child(1) {
+    margin-right: 53px;
+  }
+}
+
 .contact_form {
   background: url(../images/cotact564/564.png) no-repeat;
   width: 350px;
@@ -1154,6 +1179,14 @@ contact
 @media screen and (min-width: 764px) and (max-width: 1366px) {
   .contact_form {
     width: 380px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .contact_form {
+    background: url(../images/contact562/contact562.png) no-repeat;
+    width: 750px;
+    height: 520px;
   }
 }
 
@@ -1267,7 +1300,7 @@ footer
 }
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
-  footer {
+  .footer {
     height: 154px;
   }
 }

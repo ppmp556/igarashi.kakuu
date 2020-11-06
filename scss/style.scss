@@ -485,6 +485,7 @@ profile
 
 .prof {
     padding: 0 0 64px;
+    position: relative;
 
     .section_ttlbox {
         padding: 88px 0 45px;
@@ -492,6 +493,29 @@ profile
         text-align: center;
         margin: 0 auto;
     }
+
+    &::after {
+            position: absolute;
+            content: '';
+            background: url(/images/スマホデザイン/グループ・475.png) no-repeat;
+            width: 96px;
+            height: 96px;
+            display: block;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            background: url(/images/スマホデザイン/グループ・476.png) no-repeat;
+            width: 96px;
+            height: 96px;
+            display: block;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
 
 
     @include tab {
@@ -512,27 +536,6 @@ profile
             width: 704px;
             display: flex;
             // flex-direction: row-reverse;
-    }
-
-        &::after {
-            position: absolute;
-            content: '';
-            background: url(/images/スマホデザイン/グループ・475.png) no-repeat;
-            width: 13%;
-            height: 16%;
-            display: block;
-            left: 0;
-            bottom: -120%;
-            z-index: -1;
-        }
-        &::before {
-            position: absolute;
-            content: '';
-            background: url(/images/スマホデザイン/グループ・476.png) no-repeat;
-            width: 13%;
-            height: 16%;
-            display: block;
-            left: 87.5%;
         }
     }
 
@@ -729,6 +732,29 @@ works
     padding: 88px 0 64px;
     background-color: $cGray;
     // height: 1838px;
+    position: relative;
+
+    &::after {
+            position: absolute;
+            content: '';
+            background: url(/images/スマホデザイン/グループ・487.png) no-repeat;
+            width: 96px;
+            height: 96px;
+            display: block;
+            right: 0;
+            bottom: 0;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            background: url(/images/スマホデザイン/グループ・477.png) no-repeat;
+            width: 96px;
+            height: 96px;
+            display: block;
+            bottom: 0;
+            left: 0;
+
+        }
 
     .section_ttlbox {
         padding: 88px 0 45px;
@@ -743,27 +769,7 @@ works
         margin: 0 auto;
         height: 1838px;
 
-        &::after {
-            position: absolute;
-            content: '';
-            background: url(/images/スマホデザイン/グループ・487.png) no-repeat;
-            width: 100%;
-            height: 19%;
-            display: block;
-            left: 77%;
-            bottom: -317px;
-        }
-        &::before {
-            position: absolute;
-            content: '';
-            background: url(/images/スマホデザイン/グループ・477.png) no-repeat;
-            width: 100%;
-            height: 16%;
-            display: block;
-            top: -4.7%;
-            left: -6%;
-            z-index: 1;
-        }
+        
     }
 
     @include tab {
@@ -961,6 +967,29 @@ skill
 .skill {
     padding: 88px 0 65px;
     background-color: $cwhite;
+    position: relative;
+
+    &::after {
+            position: absolute;
+            content: '';
+            background: url(/images/スマホデザイン/グループ・492.png) no-repeat;
+            width: 96px;
+            height: 96px;
+            display: block;
+            right: 0;
+            bottom: 0;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            background: url(/images/スマホデザイン/グループ・493.png) no-repeat;
+            width: 96px;
+            height: 96px;
+            display: block;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
 
     &_ttl {
         width: 100%;
@@ -1008,27 +1037,7 @@ skill
         margin: 0 auto;
         // height: 1838px;
 
-        &::after {
-            position: absolute;
-            content: '';
-            background: url(/images/スマホデザイン/グループ・492.png) no-repeat;
-            width: 100%;
-            height: 19%;
-            display: block;
-            left: 77%;
-            top: -131px;
-        }
-        &::before {
-            position: absolute;
-            content: '';
-            background: url(/images/スマホデザイン/グループ・493.png) no-repeat;
-            width: 29%;
-            height: 16%;
-            display: block;
-            bottom: -65px;
-            left: -6%;
-            z-index: 1;
-        }
+        
     }
     @include tab {
 
@@ -1167,6 +1176,22 @@ contact
         
     }
 
+    @include pc {
+        &_inner {
+            display: flex;
+            flex-wrap: wrap;
+            width: 88%;
+        }
+
+        &_formwrap {
+            width: 300px;
+
+            &:nth-child(1) {
+                margin-right: 53px;
+            }
+        }
+    }
+
     &_form {
         background: url(../images/cotact564/564.png) no-repeat;
         width: 350px;
@@ -1183,6 +1208,14 @@ contact
         &_form {
             width: 380px;
 
+
+        }
+    }
+    @include pc {
+        &_form {
+            background: url(../images/contact562/contact562.png) no-repeat;
+            width: 750px;
+            height: 520px;
         }
     }
 }
@@ -1215,7 +1248,6 @@ contact
     padding-left: 10px;
 
 }
-
 
 
 
@@ -1310,10 +1342,12 @@ footer
 }
 
 @include tab {
-    footer {
+    .footer {
         height: 154px;
     }
+
 }
+
 
 
 
