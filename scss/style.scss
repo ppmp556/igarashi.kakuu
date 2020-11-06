@@ -744,17 +744,17 @@ works
             right: 0;
             bottom: 0;
         }
-        &::before {
-            position: absolute;
-            content: '';
-            background: url(/images/スマホデザイン/グループ・477.png) no-repeat;
-            width: 96px;
-            height: 96px;
-            display: block;
-            bottom: 0;
-            left: 0;
+    &::before {
+        position: absolute;
+        content: '';
+        background: url(/images/スマホデザイン/グループ・477.png) no-repeat;
+        width: 96px;
+        height: 96px;
+        display: block;
+        top: 0;
+        left: 0;
 
-        }
+    }
 
     .section_ttlbox {
         padding: 88px 0 45px;
@@ -977,7 +977,7 @@ skill
             height: 96px;
             display: block;
             right: 0;
-            bottom: 0;
+            top: 0;
         }
         &::before {
             position: absolute;
@@ -986,7 +986,7 @@ skill
             width: 96px;
             height: 96px;
             display: block;
-            top: 0;
+            bottom: 0;
             left: 0;
             z-index: 1;
         }
@@ -1142,6 +1142,29 @@ contact
 .contact {
     padding: 88px 0 64px;
     background-color: $cGray;
+    position: relative;
+
+    &::after {
+            position: absolute;
+            content: '';
+            background: url(/images/スマホデザイン/グループ・514.png) no-repeat;
+            width: 96px;
+            height: 96px;
+            display: block;
+            right: 0;
+            bottom: 0;
+    }
+    &::before {
+            position: absolute;
+            content: '';
+            background: url(/images/スマホデザイン/グループ・497.png) no-repeat;
+            width: 96px;
+            height: 96px;
+            display: block;
+            top: 0;
+            left: 0;
+            z-index: 1;
+    }
 
     &_ttl {
         width: 100%;
@@ -1159,7 +1182,8 @@ contact
             content: 'Contact';
             position: absolute;
             bottom: -20px;
-            right: 8px;
+            left: 50%;
+            transform: translateX(-50%);
             z-index: -1;
             color: $cBgColor;
             opacity: 1;
@@ -1217,6 +1241,22 @@ contact
             width: 750px;
             height: 520px;
         }
+    }
+
+    &_btnbox {
+        text-align: center;
+
+    }
+
+    &_btn {
+        text-align: center;
+        width: 200px;
+        margin: 0 8px;
+        border: 1px solid $cGreen;
+        background-color: $cwhite;
+        line-height: 56px;
+        font-size: 2.4rem;
+        font-family: 'Bad Script';
     }
 }
 
@@ -1287,11 +1327,41 @@ footer
     width: 100%;
     height: 138px;
     margin: 0 auto;
+    position: relative;
+
+    &::after {
+            position: absolute;
+            content: '';
+            background: url(/images/スマホデザイン/グループ・515.png) no-repeat;
+            width: 96px;
+            height: 96px;
+            display: block;
+            right: 0;
+            top: 0;
+    }
+    &::before {
+            position: absolute;
+            content: '';
+            background: url(/images/スマホデザイン/グループ・516.png) no-repeat;
+            width: 96px;
+            height: 96px;
+            display: block;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+    }
+
+    &_sharbox {
+        margin: auto;
+    }
+
+
 
     &_sharelist {
         display: flex;
         justify-content: center;
-        margin-top: 24px;
+        padding-top: 24px;
+        margin: auto;
     }
 
     @include tab {
@@ -1300,28 +1370,6 @@ footer
         }
     }
 
-    &_inner {
-        position: relative;
-
-        &::before {
-            position: absolute;
-            content: "";
-            top: -25px;
-            right: 0;
-            background: url(/images/スマホデザイン/グループ・515.png) no-repeat;
-            width: 25%;
-            height: 96px;
-        }
-        &::after {
-            position: absolute;
-            content: "";
-            top: 43px;
-            left: 0;
-            background: url(/images/スマホデザイン/グループ・516.png) no-repeat;
-            width: 25%;
-            height: 96px;
-        }
-    }
 
     &_txt {
         font-size: 1.8rem;
