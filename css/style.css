@@ -123,6 +123,7 @@ header
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   /* ハンバーガーメニュー */
 }
 
@@ -156,7 +157,7 @@ header
 }
 
 .nav_list.clicked {
-  left: 123px;
+  left: 0;
   visibility: visible;
   opacity: 0.9;
   width: 262px;
@@ -189,9 +190,9 @@ header
     -webkit-flex-direction: initial;
         -ms-flex-direction: initial;
             flex-direction: initial;
-    left: 38%;
+    left: 0;
     top: 0;
-    width: 62%;
+    width: 100%;
     background-color: #ffffff;
   }
   .nav_list.clicked {
@@ -262,7 +263,7 @@ header
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
   .nav_item {
-    margin-right: 56px;
+    margin-right: 40px;
     font-size: 2.4rem;
   }
   .nav_item:nth-child(4) {
@@ -309,7 +310,7 @@ header
   z-index: 2000;
   position: absolute;
   top: 0;
-  width: 45.25px;
+  width: 16%;
   /* height: 24px; */
   height: 55px;
   right: 16.19px;
@@ -331,7 +332,7 @@ header
   z-index: 2100;
   right: 6.3px;
   top: 14px;
-  width: 100%;
+  width: 45.25px;
   height: 1px;
   background-color: #315611;
   -webkit-transition: all 0.3s;
@@ -1019,6 +1020,14 @@ skill
   margin: 0 auto;
 }
 
+.skill .flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media screen and (min-width: 764px) and (max-width: 1366px) {
   .skill_inner {
     width: 500px;
@@ -1033,6 +1042,18 @@ skill
 
 .skill_listbox {
   margin-top: 43px;
+}
+
+.skill_listbox.flex {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+  -webkit-flex-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
 }
 
 .skill_imgbox {
@@ -1247,6 +1268,10 @@ contact
   margin-top: 24.5px;
 }
 
+.form2.bb {
+  border-bottom: 1px solid;
+}
+
 .form_ttl {
   padding-left: 10px;
 }
@@ -1321,8 +1346,12 @@ footer
   margin: auto;
 }
 
+.footer_sharelist {
+  padding-top: 0;
+}
+
 @media screen and (min-width: 764px) and (max-width: 1366px) {
-  .footer_sharelist {
+  .footer_item {
     margin-top: 40px;
   }
 }

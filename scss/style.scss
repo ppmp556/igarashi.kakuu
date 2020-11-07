@@ -141,6 +141,7 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
 
     /* ハンバーガーメニュー */
@@ -167,7 +168,7 @@ header
         opacity: 1;
 
         &.clicked {
-            left: 123px;
+            left: 0;
             visibility: visible;
             opacity: 0.9;
             width: 262px;
@@ -187,9 +188,9 @@ header
         &_list {
             justify-content: center;
             flex-direction: initial;
-            left: 38%;
+            left: 0;
             top: 0;
-            width: 62%;
+            width: 100%;
             background-color: $cwhite;
 
             &.clicked {
@@ -252,8 +253,9 @@ header
 
     @include tab {
         &_item {
-            margin-right: 56px;
+            margin-right: 40px;
             font-size: 2.4rem;
+            
 
             &:nth-child(4) {
                 margin-right: 40px;
@@ -306,7 +308,7 @@ header
     z-index: 2000;
     position: absolute;
     top: 0;
-    width: 45.25px;
+    width: 16%;
     /* height: 24px; */
     height: 55px;
     right: 16.19px;
@@ -326,7 +328,7 @@ header
     z-index: 2100;
     right: 6.3px;
     top: 14px;
-    width: 100%;
+    width: 45.25px;
     height: 1px;
     background-color: #315611;
     transition: all 0.3s;
@@ -1039,6 +1041,10 @@ skill
 
         
     }
+
+    .flex {
+        flex-direction: column;
+    }
     @include tab {
 
         &_inner {
@@ -1055,6 +1061,11 @@ skill
 
     &_listbox {
         margin-top: 43px;
+
+        &.flex {
+            justify-content: center;
+            flex-direction: initial;
+        }
     }
 
     &_imgbox {
@@ -1225,6 +1236,7 @@ contact
         // background-size: cover;
         display: flex;
 
+
         
     }
 
@@ -1280,6 +1292,10 @@ contact
 
 .form2 {
     margin-top: 24.5px;
+
+    &.bb {
+        border-bottom: 1px solid;
+    }
 
 }
 
@@ -1364,11 +1380,17 @@ footer
         margin: auto;
     }
 
+    &_sharelist {
+        padding-top: 0;
+    }
+
     @include tab {
-        &_sharelist {
+        &_item {
             margin-top: 40px;
         }
     }
+
+
 
 
     &_txt {
