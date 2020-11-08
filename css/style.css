@@ -55,14 +55,52 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .site_btn {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #315611;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  font-size: 2.4rem;
+  color: #315611;
+  line-height: 27px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 200px;
-  font-size: 2.4rem;
-  color: #572B23;
-  line-height: 27px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.site_btn:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  background-color: #315611;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.site_btn:hover:before {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.site_btn:hover {
+  color: #ffffff;
+  opacity: 1;
 }
 
 .site_link {
@@ -70,6 +108,10 @@ a:link, a:visited, a:hover, a:active {
   height: 100%;
   display: block;
   margin: auto;
+}
+
+.nav_color {
+  color: #315611;
 }
 
 /****************
@@ -105,6 +147,12 @@ header
   .header_ttl {
     font-size: 3.2rem;
     margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 764px) and (max-width: 1366px) and (min-width: 1366px) {
+  .header_ttl {
+    margin-left: 120px;
   }
 }
 
@@ -240,7 +288,7 @@ header
 
 .nav_item::after {
   position: absolute;
-  bottom: -4px;
+  bottom: 0;
   left: 0;
   content: '';
   width: 100%;
@@ -259,6 +307,10 @@ header
 .nav_item:hover::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+}
+
+.nav_item.nav_color {
+  color: #315611;
 }
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
@@ -297,8 +349,13 @@ header
   line-height: 2;
 }
 
+.nav_link.nav_color {
+  color: #315611;
+}
+
 .nav_sp {
   font-size: 1.4rem;
+  list-style: 1.5em;
 }
 
 .clicked .nav_list .nav_item {
@@ -373,7 +430,7 @@ kv
 .kv {
   background: url(/images/top-image/top-image.png) center/cover no-repeat;
   background-position-y: 50%;
-  height: 100vh;
+  height: 611px;
   width: 100%;
   position: relative;
   z-index: -1;
@@ -390,10 +447,52 @@ kv
   }
 }
 
-@media screen and (min-width: 764px) and (max-width: 1366px) and (min-width: 1366px) {
+@media screen and (min-width: 1366px) {
   .kv_txtbox {
-    width: 80%;
+    width: 60%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
+}
+
+.kv .site_btn {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  bottom: 80px;
+  left: 25%;
+  width: 20rem;
+  line-height: 45px;
+  opacity: 1;
+  border: 1px solid #572B23;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 2.3rem;
+  font-family: "bad script";
+  color: #572B23;
+}
+
+.kv .site_btn:before {
+  background-color: #572B23;
+}
+
+.kv .site_btn:hover {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 764px) and (max-width: 1366px) {
+  .kv .site_btn {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.kv .site_link {
+  padding: 6px 66px;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 .kv_txt {
@@ -411,6 +510,12 @@ kv
 @media screen and (min-width: 764px) and (max-width: 1366px) {
   .kv_txt {
     font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .kv_txt {
+    margin-bottom: 24px;
   }
 }
 
@@ -440,24 +545,16 @@ kv
 @media screen and (min-width: 1366px) {
   .__subtxt {
     width: 533px;
+    padding: 19px 40px 17px 120px;
   }
 }
 
-.contact_box {
-  display: block;
-  position: absolute;
-  bottom: 80px;
-  left: 25%;
-  margin: 0 auto;
-  width: 20rem;
-  line-height: 45px;
-  opacity: 1;
-  border: 1px solid #572B23;
-  text-align: center;
-  background-color: #f6f3eb;
-  font-size: 2.3rem;
-  font-family: "bad script";
-  color: #572B23;
+@media screen and (min-width: 1366px) {
+  .kv {
+    background: url(/images/pc-top-image/top-image.png) center/cover no-repeat;
+    height: 688px;
+    background-position-y: 100%;
+  }
 }
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
@@ -466,13 +563,6 @@ kv
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-}
-
-.contact_link {
-  padding: 6px 66px;
-  display: block;
-  width: 100%;
-  text-align: center;
 }
 
 /****************
@@ -699,6 +789,22 @@ profile
   margin: 0 8px;
   border: 1px solid #315611;
   line-height: 48px;
+  color: #315611;
+}
+
+.prof .site_btn:hover {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 764px) and (max-width: 1366px) {
+  .prof .site_btn {
+    position: absolute;
+    left: 50%;
+  }
+  .prof .site_tw {
+    position: absolute;
+    left: 25%;
+  }
 }
 
 @media screen and (min-width: 1366px) {
@@ -764,6 +870,7 @@ works
 @media screen and (min-width: 764px) and (max-width: 1366px) {
   .work_inner {
     width: 500px;
+    height: 1710px;
   }
 }
 
@@ -926,6 +1033,10 @@ works
   border: 1px solid #315611;
   width: 120px;
   line-height: 40px;
+}
+
+.work .site_btn:hover {
+  color: #ffffff;
 }
 
 @media screen and (min-width: 1366px) {
@@ -1241,15 +1352,41 @@ contact
   text-align: center;
 }
 
-.contact_btn {
-  text-align: center;
-  width: 200px;
-  margin: 0 8px;
-  border: 1px solid #315611;
-  background-color: #ffffff;
+@media screen and (min-width: 764px) and (max-width: 1366px) {
+  .contact_btnbox {
+    display: inline-block;
+    margin-top: 40px;
+  }
+}
+
+.contact .site_btn {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  bottom: 80px;
+  left: 25%;
+  width: 20rem;
   line-height: 56px;
+  opacity: 1;
+  border: 1px solid #315611;
+  text-align: center;
+  background-color: #ffffff;
   font-size: 2.4rem;
-  font-family: 'Bad Script';
+  font-family: "bad script";
+  color: #315611;
+}
+
+.contact .site_btn:hover {
+  color: #ffffff;
+  background-color: #315611;
+}
+
+@media screen and (min-width: 764px) and (max-width: 1366px) {
+  .contact .site_btn {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .form {
@@ -1346,13 +1483,12 @@ footer
   margin: auto;
 }
 
-.footer_sharelist {
-  padding-top: 0;
-}
-
 @media screen and (min-width: 764px) and (max-width: 1366px) {
   .footer_item {
     margin-top: 40px;
+  }
+  .footer_sharelist {
+    padding-top: 0;
   }
 }
 
