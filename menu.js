@@ -2,10 +2,21 @@
 
 $(() => {
 
+    const body = document.body;
+
     // ハンバーガーメニュー
     $('#nav_lists').click(() => {
         $('.nav_list').toggleClass('clicked');
         $('.toggle_line').toggleClass('clicked');
+    });
+
+    body.click(() => {
+        if ($('.nav_list').hasClass('clicked')) {
+            $('.nav_list').removeClass('clicked');
+        } else {
+            false
+        }
+
     });
 });
 

@@ -199,8 +199,7 @@ header
         position: absolute;
         display: block;
         top: 54px;
-        /* left: 377px; */
-        left: 1000px;
+        right: -1000px;
         overflow: hidden;
         width: 15rem;
         max-height: auto;
@@ -218,7 +217,7 @@ header
         opacity: 1;
 
         &.clicked {
-            left: 0;
+            right: 0;
             visibility: visible;
             opacity: 0.9;
             width: 262px;
@@ -430,6 +429,7 @@ kv
     &_txtbox {
         position: absolute;
         top: 50%;
+        transform: translateY(-50%);
 
     }
 
@@ -505,6 +505,7 @@ kv
     @include tab {
         &_txt {
             font-size: 4rem;
+            margin-bottom: 40px;
         }
     }
 
@@ -546,6 +547,16 @@ kv
     }
 }
 
+
+
+@include tab {
+    .kv {
+        background: url(/images/iPadデザイン/top-image.png) center / cover no-repeat;
+        height: 943px;
+        background-position-y: 50%;
+
+    }
+}
 @include pc {
     .kv {
         background: url(/images/pc-top-image/top-image.png) center / cover no-repeat;
@@ -1174,7 +1185,6 @@ skill
         }
     }
 
-
     &_listbox {
         margin-top: 43px;
 
@@ -1205,6 +1215,10 @@ skill
         }
     }
 
+    &_list {
+        font-family: 'Sawarabi Gothic', Regular;
+    }
+
 
     &_img {
         width: 100%;
@@ -1215,6 +1229,13 @@ skill
     &_item {
         font-size: 1.6rem;
         line-height: 2em;
+    }
+
+    &_itemspan {
+        color: $cGreen;
+        font-size: .8rem;
+        text-align: left;
+        
     }
 
     @include tab {
@@ -1322,6 +1343,7 @@ contact
         margin: auto;
         display: block;
         width: 300px;
+        padding-bottom: 24.5px;
         
     }
 
@@ -1340,6 +1362,8 @@ contact
             }
         }
     }
+
+
 
     &_form {
         background: url(../images/cotact564/564.png) no-repeat;
@@ -1387,7 +1411,8 @@ contact
         display: block;
         position: absolute;
         bottom: 80px;
-        left: 25%;
+        left: 50%;
+        transform: translateX(-50%);
         width: 20rem;
         line-height: 56px;
 
@@ -1436,6 +1461,7 @@ contact
     &:last-child {
         border:none;
     }
+    
 }
 
 .form2 {
@@ -1444,6 +1470,7 @@ contact
     &.bb {
         border-bottom: 1px solid;
     }
+
 
 }
 
