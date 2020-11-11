@@ -424,7 +424,7 @@ kv
     // display: flex;
 
     position: relative;
-    z-index: -1;
+    z-index: 1;
 
     &_txtbox {
         position: absolute;
@@ -451,7 +451,7 @@ kv
         display: block;
         position: absolute;
         bottom: 80px;
-        left: 25%;
+        left: 50%;
         // margin: 0 auto;
         width: 20rem;
         line-height: 45px;
@@ -463,6 +463,8 @@ kv
         font-size: 2.3rem;
         font-family: "bad script";
         color: $cColor;
+
+        transform: translateX(-50%);
 
         &:before {
 
@@ -791,7 +793,7 @@ profile
         .section_btnbox {
             margin: 40px auto;
             width: 50%;
-            
+
         }
     }
 
@@ -1375,41 +1377,10 @@ contact
         display: flex;
 
 
-        
-    }
-
-    @include tab {
-        &_form {
-            width: 380px;
-
-
-        }
-    }
-    @include pc {
-        &_form {
-            background: url(../images/contact562/contact562.png) no-repeat;
-            width: 750px;
-            height: 520px;
-        }
-    }
-
-    &_btnbox {
-        text-align: center;
-
-    }
-
-    @include tab {
-        &_btnbox {
-            display: inline-block;
-            margin-top: 40px;
-
-        }
-    }
-
-    .site_btn {
+        .site_btn {
         cursor: pointer;
         display: block;
-        position: absolute;
+        position: relative;
         bottom: 80px;
         left: 50%;
         transform: translateX(-50%);
@@ -1433,7 +1404,60 @@ contact
             color: $cwhite;
             background-color: $cGreen;
         }
+
+        &:before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            content: '';
+            background-color: $cGreen;
+            transform-origin: right top;
+            transform: scale(0, 1);
+            transition: transform .3s
+        }
+
+        &:hover:before {
+            transform-origin: left top;
+            transform: scale(1, 1);
+        }
+
+
     }
+
+    @include tab {
+        &_form {
+            width: 380px;
+
+
+        }
+    }
+    @include pc {
+        &_form {
+            background: url(../images/contact562/contact562.png) no-repeat;
+            width: 750px;
+            height: 520px;
+        }
+    }
+
+    @include tab {
+        &_btnbox {
+            display: inline-block;
+            margin-top: 40px;
+
+        }
+    }
+
+
+    }
+
+
+
+
+
+
 
     @include tab {
         .site_btn {
@@ -1461,6 +1485,18 @@ contact
     &:last-child {
         border:none;
     }
+
+    &_area {
+        font-family: "Bad Script";
+        opacity: .5;
+        font-size: 1.6rem;
+        color: $cGreen;
+        padding: 8px;
+        width: 30rem;
+        height: 16rem;
+        display: inline-block;
+        border: 1px solid $cColor;
+    }
     
 }
 
@@ -1477,6 +1513,8 @@ contact
 
 .form_ttl {
     padding-left: 10px;
+    width: 40px;
+    display: inline-block;
 
 }
 
@@ -1488,20 +1526,13 @@ contact
    opacity: 0.5;
    left: 16px;
    position: relative;
-   width: 85%;
+   width: 80%;
    font-family: "Bad Script";
 
    
 }
 
 
-.form_area {
-    width: 30rem;
-    height: 16rem;
-    display: inline-block;
-    border: 1px solid $cColor;
-
-}
 
 /****************
 
