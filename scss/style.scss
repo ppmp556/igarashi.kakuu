@@ -69,17 +69,23 @@ a:link, a:visited, a:hover, a:active {
     justify-content: flex-start;
 }
 
+
 .inner {
-    min-width: 336px;
+    // min-width: 336px;
     width: 100%;
     margin: 0 auto;
 }
 
-@include tab {
-    .inner {
-        min-height: 704px;;
-    }
-}
+// @include tab {
+//     .inner {
+//         min-width: 704px;
+//     }
+// }
+// @include pc {
+//     .inner {
+//         min-width: 704px;
+//     }
+// }
 
 
 
@@ -417,7 +423,7 @@ kv
 *************/
 
 .kv {
-    background: url(/images/top-image/top-image.png) center / cover no-repeat;
+    background: url(../images/top-image/top-image.png) center / cover no-repeat;
     background-position-y: 50%;
     height: 611px;
     width: 100%;
@@ -499,7 +505,7 @@ kv
         color: $cGreen;
         padding: 10px 24px;
         background-color: $cwhite;
-        opacity: 1;
+        opacity: .8;
         margin-bottom: 16px;
         line-height: 2;
     }
@@ -536,9 +542,8 @@ kv
     .__subtxt {
         font-size: 2.4rem;
         width: 344px;
-        padding: 19px 40px 17px;
-        line-height: .82;
-        height: 60px;
+        line-height: 60px;
+        height: initial;
     }
 }
 
@@ -553,7 +558,7 @@ kv
 
 @include tab {
     .kv {
-        background: url(/images/iPadデザイン/top-image.png) center / cover no-repeat;
+        background: url(../images/iPadデザイン/top-image.png) center / cover no-repeat;
         height: 943px;
         background-position-y: 50%;
 
@@ -561,7 +566,7 @@ kv
 }
 @include pc {
     .kv {
-        background: url(/images/pc-top-image/top-image.png) center / cover no-repeat;
+        background: url(../images/pc-top-image/top-image.png) center / cover no-repeat;
         height: 688px;
         background-position-y: 100%;
 
@@ -629,6 +634,11 @@ profile
             padding: 128px 0 39px;
         }
     }
+    @include pc {
+        .section_ttlbox {
+            position: relative;
+        }
+    }
 
     &_inner {
         position: relative;
@@ -675,14 +685,32 @@ profile
         }
 
         @include tab {
-        &::before {
-            font-size: 12rem;
-            right: 6%;
+            &::before {
+                font-size: 12rem;
+                right: 6%;
+            }
+        }
+
+        @include pc {
+            &::before {
+                font-size: 12rem;
+                bottom: 0;
+                right: 10%;
+            }
+        }
+    }
+
+    @include pc {
+        &_ttl {
+            position: absolute;
+            bottom: -30px;
+            left: 88px;
+            font-size: 3.6rem;
         }
     }
 
 
-    }
+
 
     &_imgbox {
         position: relative;
@@ -741,6 +769,8 @@ profile
         &_imgbox {
             width: 400px;
             height: 500px;
+            left: 0;
+            transform: initial;
 
             &::after {
                 width: 400px;
@@ -762,6 +792,12 @@ profile
         display: block;
     }
 
+    @include pc {
+        &_content {
+            position: relative;
+        }
+    }
+
     &_txt {
         margin: 40px 0 40px;
         font-size: 1.6rem;
@@ -778,7 +814,7 @@ profile
     @include pc {
         &_txt {
             width: 493px;
-            margin: 0 0 40px 40px;
+            margin: 83px 0 40px 80px;
             font-size: 1.8rem;
         }
     }
@@ -834,13 +870,19 @@ profile
         .site_btn {
             width: 200px;
             line-height: 56px;
+            left: 320px;
+            position: absolute;
+        }
+
+        .site_tw {
+            left: 72px;
         }
     }
 }
 
 @include tab {
     .prof {
-        padding: 0 0 80px;
+        padding: 0 0 88px;
     }
 }
 
@@ -1143,15 +1185,20 @@ skill
             z-index: -1;
             color: $cBgColor;
             opacity: 1;
-            font-size: 100px;
+            font-size: 10rem;
         }
 
 
     }
 
+   
+
+
+
     @include tab {
         &_ttl {
             font-size: 3.6rem;
+
         }
     }
 
@@ -1159,6 +1206,12 @@ skill
         &_ttl {
             text-align: left;
             margin-left: 162px;
+
+            &::before {
+                bottom: 0;
+                font-size: 12rem;
+                left: -100px;
+            }
         }
     }
 
@@ -1168,11 +1221,19 @@ skill
         margin: 0 auto;
         // height: 1838px;
 
+
         
     }
 
     .flex {
         flex-direction: column;
+    }
+
+    @include pc {
+        .flex {
+            flex-direction: initial;
+            justify-content: center;
+        }
     }
     @include tab {
 
@@ -1193,6 +1254,12 @@ skill
         &.flex {
             justify-content: center;
             flex-direction: initial;
+        }
+    }
+
+    @include pc {
+        &_listbox {
+            margin-top: 0;
         }
     }
 
@@ -1376,34 +1443,27 @@ contact
         // background-size: cover;
         display: flex;
 
+    }
 
-        .site_btn {
+    .site_btn {
+        font-size: "bad script";
         cursor: pointer;
-        display: block;
-        position: relative;
-        bottom: 80px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 20rem;
-        line-height: 56px;
-
-        opacity: 1;
-        border: 1px solid $cGreen;
+        margin: 0 auto;
         text-align: center;
-        background-color: $cwhite;
-        font-size: 2.4rem;
-        font-family: "bad script";
         color: $cGreen;
-
-        // &:before {
-
-        //     background-color: $cGreen;
-        // }
+        font-size: 2.4rem;
+        border: 1px solid $cGreen;
+        width: 200px;
+        line-height: 56px;
+        position: relative;
 
         &:hover {
             color: $cwhite;
-            background-color: $cGreen;
+            // background-color: $cGreen;
+
         }
+
+
 
         &:before {
             position: absolute;
@@ -1423,6 +1483,7 @@ contact
             transform-origin: left top;
             transform: scale(1, 1);
         }
+
 
 
     }
@@ -1451,21 +1512,6 @@ contact
     }
 
 
-    }
-
-
-
-
-
-
-
-    @include tab {
-        .site_btn {
-            left: 50%;
-            transform: translateX(-50%);
-
-        }
-    }
 
 }
 

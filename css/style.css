@@ -43,15 +43,8 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .inner {
-  min-width: 336px;
   width: 100%;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 764px) and (max-width: 1366px) {
-  .inner {
-    min-height: 704px;
-  }
 }
 
 .site_btn {
@@ -427,7 +420,7 @@ kv
 
 *************/
 .kv {
-  background: url(/images/top-image/top-image.png) center/cover no-repeat;
+  background: url(../images/top-image/top-image.png) center/cover no-repeat;
   background-position-y: 50%;
   height: 611px;
   width: 100%;
@@ -505,7 +498,7 @@ kv
   color: #315611;
   padding: 10px 24px;
   background-color: #ffffff;
-  opacity: 1;
+  opacity: .8;
   margin-bottom: 16px;
   line-height: 2;
 }
@@ -540,9 +533,8 @@ kv
   .__subtxt {
     font-size: 2.4rem;
     width: 344px;
-    padding: 19px 40px 17px;
-    line-height: .82;
-    height: 60px;
+    line-height: 60px;
+    height: initial;
   }
 }
 
@@ -555,7 +547,7 @@ kv
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
   .kv {
-    background: url(/images/iPadデザイン/top-image.png) center/cover no-repeat;
+    background: url(../images/iPadデザイン/top-image.png) center/cover no-repeat;
     height: 943px;
     background-position-y: 50%;
   }
@@ -563,7 +555,7 @@ kv
 
 @media screen and (min-width: 1366px) {
   .kv {
-    background: url(/images/pc-top-image/top-image.png) center/cover no-repeat;
+    background: url(../images/pc-top-image/top-image.png) center/cover no-repeat;
     height: 688px;
     background-position-y: 100%;
   }
@@ -624,6 +616,12 @@ profile
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .prof .section_ttlbox {
+    position: relative;
+  }
+}
+
 .prof_inner {
   position: relative;
   width: 336px;
@@ -677,6 +675,23 @@ profile
   .prof_ttl::before {
     font-size: 12rem;
     right: 6%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .prof_ttl::before {
+    font-size: 12rem;
+    bottom: 0;
+    right: 10%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .prof_ttl {
+    position: absolute;
+    bottom: -30px;
+    left: 88px;
+    font-size: 3.6rem;
   }
 }
 
@@ -736,6 +751,9 @@ profile
   .prof_imgbox {
     width: 400px;
     height: 500px;
+    left: 0;
+    -webkit-transform: initial;
+            transform: initial;
   }
   .prof_imgbox::after {
     width: 400px;
@@ -751,6 +769,12 @@ profile
   width: 100%;
   height: 100%;
   display: block;
+}
+
+@media screen and (min-width: 1366px) {
+  .prof_content {
+    position: relative;
+  }
 }
 
 .prof_txt {
@@ -769,7 +793,7 @@ profile
 @media screen and (min-width: 1366px) {
   .prof_txt {
     width: 493px;
-    margin: 0 0 40px 40px;
+    margin: 83px 0 40px 80px;
     font-size: 1.8rem;
   }
 }
@@ -823,12 +847,17 @@ profile
   .prof .site_btn {
     width: 200px;
     line-height: 56px;
+    left: 320px;
+    position: absolute;
+  }
+  .prof .site_tw {
+    left: 72px;
   }
 }
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
   .prof {
-    padding: 0 0 80px;
+    padding: 0 0 88px;
   }
 }
 
@@ -1121,7 +1150,7 @@ skill
   z-index: -1;
   color: #f6f3eb;
   opacity: 1;
-  font-size: 100px;
+  font-size: 10rem;
 }
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
@@ -1134,6 +1163,11 @@ skill
   .skill_ttl {
     text-align: left;
     margin-left: 162px;
+  }
+  .skill_ttl::before {
+    bottom: 0;
+    font-size: 12rem;
+    left: -100px;
   }
 }
 
@@ -1149,6 +1183,20 @@ skill
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 1366px) {
+  .skill .flex {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+    -webkit-flex-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
@@ -1177,6 +1225,12 @@ skill
   -webkit-flex-direction: initial;
       -ms-flex-direction: initial;
           flex-direction: initial;
+}
+
+@media screen and (min-width: 1366px) {
+  .skill_listbox {
+    margin-top: 0;
+  }
 }
 
 .skill_imgbox {
@@ -1357,31 +1411,24 @@ contact
   display: flex;
 }
 
-.contact_form .site_btn {
+.contact .site_btn {
+  font-size: "bad script";
   cursor: pointer;
-  display: block;
-  position: relative;
-  bottom: 80px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 20rem;
-  line-height: 56px;
-  opacity: 1;
-  border: 1px solid #315611;
+  margin: 0 auto;
   text-align: center;
-  background-color: #ffffff;
-  font-size: 2.4rem;
-  font-family: "bad script";
   color: #315611;
+  font-size: 2.4rem;
+  border: 1px solid #315611;
+  width: 200px;
+  line-height: 56px;
+  position: relative;
 }
 
-.contact_form .site_btn:hover {
+.contact .site_btn:hover {
   color: #ffffff;
-  background-color: #315611;
 }
 
-.contact_form .site_btn:before {
+.contact .site_btn:before {
   position: absolute;
   top: 0;
   right: 0;
@@ -1400,7 +1447,7 @@ contact
   transition: transform .3s, -webkit-transform .3s;
 }
 
-.contact_form .site_btn:hover:before {
+.contact .site_btn:hover:before {
   -webkit-transform-origin: left top;
           transform-origin: left top;
   -webkit-transform: scale(1, 1);
@@ -1408,13 +1455,13 @@ contact
 }
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
-  .contact_form_form {
+  .contact_form {
     width: 380px;
   }
 }
 
 @media screen and (min-width: 1366px) {
-  .contact_form_form {
+  .contact_form {
     background: url(../images/contact562/contact562.png) no-repeat;
     width: 750px;
     height: 520px;
@@ -1422,17 +1469,9 @@ contact
 }
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
-  .contact_form_btnbox {
+  .contact_btnbox {
     display: inline-block;
     margin-top: 40px;
-  }
-}
-
-@media screen and (min-width: 764px) and (max-width: 1366px) {
-  .contact .site_btn {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
 }
 
