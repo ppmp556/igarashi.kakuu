@@ -176,7 +176,6 @@ header
   overflow: hidden;
   width: 15rem;
   max-height: auto;
-  cursor: pointer;
   overflow-y: auto;
   /*縦方向の表示*/
   display: -webkit-box;
@@ -422,10 +421,10 @@ kv
 .kv {
   background: url(../images/top-image/top-image.png) center/cover no-repeat;
   background-position-y: 50%;
-  height: 611px;
+  height: 667px;
   width: 100%;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 .kv_txtbox {
@@ -433,6 +432,7 @@ kv
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  z-index: -1;
 }
 
 @media screen and (min-width: 764px) and (max-width: 1366px) {
@@ -466,6 +466,7 @@ kv
   color: #572B23;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: -1;
 }
 
 .kv .site_btn:before {
@@ -1370,7 +1371,13 @@ contact
   z-index: -1;
   color: #f6f3eb;
   opacity: 1;
-  font-size: 100px;
+  font-size: 10rem;
+}
+
+@media screen and (min-width: 1366px) {
+  .contact_ttl::before {
+    font-size: 12rem;
+  }
 }
 
 .contact_inner {
@@ -1475,6 +1482,12 @@ contact
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .contact {
+    padding: 128px 0 80px;
+  }
+}
+
 .form {
   line-height: 1.9;
   border-bottom: 1px solid #572B23;
@@ -1485,6 +1498,22 @@ contact
 
 .form:last-child {
   border: none;
+}
+
+.form_ttl {
+  padding-left: 10px;
+  width: 40px;
+  display: inline-block;
+}
+
+.form_box {
+  border: none;
+  color: #315611;
+  opacity: 0.5;
+  left: 16px;
+  position: relative;
+  width: 80%;
+  font-family: "Bad Script";
 }
 
 .form_area {
@@ -1505,22 +1534,6 @@ contact
 
 .form2.bb {
   border-bottom: 1px solid;
-}
-
-.form_ttl {
-  padding-left: 10px;
-  width: 40px;
-  display: inline-block;
-}
-
-.form_box {
-  border: none;
-  color: #315611;
-  opacity: 0.5;
-  left: 16px;
-  position: relative;
-  width: 80%;
-  font-family: "Bad Script";
 }
 
 /****************
