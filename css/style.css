@@ -13,7 +13,6 @@ body {
   overflow: hidden;
   width: 100%;
   height: auto;
-  overflow-y: scroll;
 }
 
 *, *::before, *::after {
@@ -143,7 +142,10 @@ header
   }
 }
 
-@media screen and (min-width: 764px) and (max-width: 1366px) and (min-width: 1366px) {
+@media screen and (min-width: 1366px) {
+  .header {
+    line-height: 80px;
+  }
   .header_ttl {
     margin-left: 120px;
   }
@@ -229,13 +231,30 @@ header
     -webkit-flex-direction: initial;
         -ms-flex-direction: initial;
             flex-direction: initial;
-    left: 0;
+    left: 51px;
     top: 0;
     width: 100%;
     background-color: #ffffff;
   }
   .nav_list.clicked {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .nav_list {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+    -webkit-flex-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    left: 277px;
+    top: 0;
+    width: 55%;
+    background-color: #ffffff;
   }
 }
 
@@ -438,14 +457,18 @@ kv
 @media screen and (min-width: 764px) and (max-width: 1366px) {
   .kv_txtbox {
     width: 100%;
+    top: calc(50% + 80px);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 
 @media screen and (min-width: 1366px) {
   .kv_txtbox {
     width: 60%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -webkit-transform: translateY(-42%);
+            transform: translateY(-42%);
+    top: 50%;
   }
 }
 
@@ -508,6 +531,7 @@ kv
   .kv_txt {
     font-size: 4rem;
     margin-bottom: 40px;
+    line-height: 1.975;
   }
 }
 
@@ -534,7 +558,7 @@ kv
   .__subtxt {
     font-size: 2.4rem;
     width: 344px;
-    line-height: 60px;
+    line-height: 1.2;
     height: initial;
   }
 }
@@ -549,7 +573,7 @@ kv
 @media screen and (min-width: 764px) and (max-width: 1366px) {
   .kv {
     background: url(../images/iPadデザイン/top-image.png) center/cover no-repeat;
-    height: 943px;
+    height: 1023px;
     background-position-y: 50%;
   }
 }
@@ -1314,6 +1338,12 @@ skill
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .skill {
+    padding: 128px 0 80px;
+  }
+}
+
 /****************
 
 contact
@@ -1397,6 +1427,7 @@ contact
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     width: 88%;
+    padding-bottom: 0;
   }
   .contact_formwrap {
     width: 300px;
@@ -1534,6 +1565,12 @@ contact
 
 .form2.bb {
   border-bottom: 1px solid;
+}
+
+@media screen and (min-width: 1366px) {
+  .form {
+    margin-top: 25.5px;
+  }
 }
 
 /****************

@@ -42,7 +42,7 @@ body {
     overflow: hidden;
     width: 100%;
     height: auto;
-    overflow-y: scroll;
+    // overflow-y: scroll;
 
 }
 
@@ -169,10 +169,16 @@ header
             margin-left: 40px;
         }
 
-        @include pc {
-            &_ttl {
-                margin-left: 120px;
-            }
+
+    }
+}
+
+@include pc {
+    .header {
+        line-height: 80px;
+
+        &_ttl {
+            margin-left: 120px;
         }
     }
 }
@@ -235,7 +241,7 @@ header
         &_list {
             justify-content: center;
             flex-direction: initial;
-            left: 0;
+            left: 51px;
             top: 0;
             width: 100%;
             background-color: $cwhite;
@@ -243,6 +249,18 @@ header
             &.clicked {
                 display: none;
             }
+        }
+    }
+    
+    @include pc {
+        &_list {
+            justify-content: space-around;
+            flex-direction: initial;
+            left: 277px;
+            top: 0;
+            width: 55%;
+            background-color: $cwhite;
+
         }
     }
 
@@ -435,13 +453,17 @@ kv
     @include tab {
         &_txtbox {
             width: 100%;
+            top: calc(50% + 80px);
+            transform: translateY(-50%);
+            
         }
     }
 
     @include pc {
         &_txtbox {
             width: 60%;
-            transform: translateY(-50%);
+            transform: translateY(-42%);
+            top: 50%;
         }
     }
 
@@ -509,6 +531,7 @@ kv
         &_txt {
             font-size: 4rem;
             margin-bottom: 40px;
+            line-height: 1.975;
         }
     }
 
@@ -537,7 +560,7 @@ kv
     .__subtxt {
         font-size: 2.4rem;
         width: 344px;
-        line-height: 60px;
+        line-height: 1.2;
         height: initial;
     }
 }
@@ -554,7 +577,7 @@ kv
 @include tab {
     .kv {
         background: url(../images/iPadデザイン/top-image.png) center / cover no-repeat;
-        height: 943px;
+        height: 1023px;
         background-position-y: 50%;
 
     }
@@ -1342,6 +1365,11 @@ skill
         padding: 128px 0 80px;
     }
 }
+@include pc {
+    .skill {
+        padding: 128px 0 80px;
+    }
+}
 
 
 
@@ -1427,6 +1455,7 @@ contact
             display: flex;
             flex-wrap: wrap;
             width: 88%;
+            padding-bottom: 0;
         }
 
         &_formwrap {
@@ -1584,6 +1613,12 @@ contact
     }
 
 
+}
+
+@include pc {
+    .form {
+        margin-top: 25.5px;
+    }
 }
 
 
