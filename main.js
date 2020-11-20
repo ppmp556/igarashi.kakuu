@@ -2,39 +2,31 @@
 
 $(() => {
 
-    const body = document.body;
     const navList = $('.nav_list');
     const ham = $('.toggle_line');
 
     // ハンバーガーメニュー
-
-          $("html, body").click(() => {
-            if (ham.hasClass('clicked')) {
-                
-                navList.removeClass('clicked');
-                ham.removeClass('clicked');
-            }
-        });
 
 
     $('#js-nav_lists').click(() => {
         navList.toggleClass('clicked');
         ham.toggleClass('clicked');
 
+        return false;
 
-  
+    });
+    $('body').click(function () {
+        if(navList.hasClass('clicked')){
+            // console.log("OK");
+            navList.removeClass('clicked');
+            ham.removeClass('clicked');
+        }
     });
 
 
 
-
-
-
-
-
-
         //ナビクリックでスムーズ移動
-  
+
     $('a[href^="#"]').click(function () {
         //スクロールのスピード
         let speed = 500;
@@ -50,7 +42,7 @@ $(() => {
         //スクロールしたらハンバーガーメニュー閉じる
         navList.removeClass('clicked');
         ham.removeClass('clicked');
-        
+
 
         return false;
     });
