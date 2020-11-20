@@ -44,6 +44,7 @@ body {
     height: auto;
     // overflow-y: scroll;
 
+
 }
 
 *, *::before, *::after {
@@ -1526,23 +1527,27 @@ contact
     }
 
     .site_btn {
-        font-size: "bad script";
         cursor: pointer;
         margin: 0 auto;
         text-align: center;
         color: $cGreen;
-        font-size: 2.4rem;
         border: 1px solid $cGreen;
-        width: 200px;
-        line-height: 56px;
+        // line-height: 56px;
         position: relative;
+        background-color: $cwhite;
+        font-family: "bad script";
+        width: 200px;
+        height: 56px;
+        font-size: 2.4rem;
+        display: block;
+
 
         &:hover {
             color: $cwhite;
             // background-color: $cGreen;
+            z-index: 1;
 
         }
-
 
 
         &:before {
@@ -1556,12 +1561,15 @@ contact
             background-color: $cGreen;
             transform-origin: right top;
             transform: scale(0, 1);
-            transition: transform .3s
+            transition: transform .3s;
+            color: $cwhite;
+            font-size: 2.4rem;
         }
-
+        
         &:hover:before {
             transform-origin: left top;
             transform: scale(1, 1);
+
         }
 
 
