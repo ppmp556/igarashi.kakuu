@@ -620,7 +620,7 @@ profile
 .prof::after {
   position: absolute;
   content: '';
-  background: url(/images/スマホデザイン/グループ・475.png) no-repeat;
+  background: url(../images/スマホデザイン/グループ・475.png) no-repeat;
   width: 96px;
   height: 96px;
   display: block;
@@ -632,7 +632,7 @@ profile
 .prof::before {
   position: absolute;
   content: '';
-  background: url(/images/スマホデザイン/グループ・476.png) no-repeat;
+  background: url(../images/スマホデザイン/グループ・476.png) no-repeat;
   width: 96px;
   height: 96px;
   display: block;
@@ -906,7 +906,7 @@ works
 .work::after {
   position: absolute;
   content: '';
-  background: url(/images/スマホデザイン/グループ・487.png) no-repeat;
+  background: url(../images/スマホデザイン/グループ・487.png) no-repeat;
   width: 96px;
   height: 96px;
   display: block;
@@ -917,7 +917,7 @@ works
 .work::before {
   position: absolute;
   content: '';
-  background: url(/images/スマホデザイン/グループ・477.png) no-repeat;
+  background: url(../images/スマホデザイン/グループ・477.png) no-repeat;
   width: 96px;
   height: 96px;
   display: block;
@@ -1173,7 +1173,7 @@ skill
 .skill::after {
   position: absolute;
   content: '';
-  background: url(/images/スマホデザイン/グループ・492.png) no-repeat;
+  background: url(../images/スマホデザイン/グループ・492.png) no-repeat;
   width: 96px;
   height: 96px;
   display: block;
@@ -1184,7 +1184,7 @@ skill
 .skill::before {
   position: absolute;
   content: '';
-  background: url(/images/スマホデザイン/グループ・493.png) no-repeat;
+  background: url(../images/スマホデザイン/グループ・493.png) no-repeat;
   width: 96px;
   height: 96px;
   display: block;
@@ -1399,7 +1399,7 @@ contact
 .contact::after {
   position: absolute;
   content: '';
-  background: url(/images/スマホデザイン/グループ・514.png) no-repeat;
+  background: url(../images/スマホデザイン/グループ・514.png) no-repeat;
   width: 96px;
   height: 96px;
   display: block;
@@ -1410,7 +1410,7 @@ contact
 .contact::before {
   position: absolute;
   content: '';
-  background: url(/images/スマホデザイン/グループ・497.png) no-repeat;
+  background: url(../images/スマホデザイン/グループ・497.png) no-repeat;
   width: 96px;
   height: 96px;
   display: block;
@@ -1650,7 +1650,7 @@ footer
 .footer::after {
   position: absolute;
   content: '';
-  background: url(/images/スマホデザイン/グループ・515.png) no-repeat;
+  background: url(../images/スマホデザイン/グループ・515.png) no-repeat;
   width: 96px;
   height: 96px;
   display: block;
@@ -1661,7 +1661,7 @@ footer
 .footer::before {
   position: absolute;
   content: '';
-  background: url(/images/スマホデザイン/グループ・516.png) no-repeat;
+  background: url(../images/スマホデザイン/グループ・516.png) no-repeat;
   width: 96px;
   height: 96px;
   display: block;
